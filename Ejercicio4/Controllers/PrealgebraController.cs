@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Ejercicio4.Helper;
+﻿using Ejercicio4.Helper;
 using Ejercicio4.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,7 +17,7 @@ namespace Ejercicio4.Controllers
         [HttpPost]
         public IActionResult Potencia(OperandosViewModel model)
         {
-            return View(Functions.DeterminarOperacionPrealgebra(model, OperacionesPrealgebra.Potencia));
+            return View(FuncPrealgebra.DeterminarOperacion(model, OperacionesPrealgebra.Potencia));
         }
 
         // RAIZ CUADRADA //
@@ -34,7 +30,7 @@ namespace Ejercicio4.Controllers
         public IActionResult RaizCuadrada(OperandosViewModel model)
         {
             model.Num2 = 0;
-            return View(Functions.DeterminarOperacionPrealgebra(model, OperacionesPrealgebra.RaizCuadrada));
+            return View(FuncPrealgebra.DeterminarOperacion(model, OperacionesPrealgebra.RaizCuadrada));
         }
 
         // RAIZ CUBICA //
@@ -47,7 +43,7 @@ namespace Ejercicio4.Controllers
         public IActionResult RaizCubica(OperandosViewModel model)
         {
             model.Num2 = 0;
-            return View(Functions.DeterminarOperacionPrealgebra(model, OperacionesPrealgebra.RaizCubica));
+            return View(FuncPrealgebra.DeterminarOperacion(model, OperacionesPrealgebra.RaizCubica));
         }
 
         // FACTORIAL //
@@ -60,7 +56,7 @@ namespace Ejercicio4.Controllers
         public IActionResult Factorial(OperandosViewModel model)
         {
             model.Num2 = 0;
-            return View(Functions.DeterminarOperacionPrealgebra(model, OperacionesPrealgebra.Factorial));
+            return View(FuncPrealgebra.DeterminarOperacion(model, OperacionesPrealgebra.Factorial));
         }
     }
 }

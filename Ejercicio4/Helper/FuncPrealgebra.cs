@@ -1,5 +1,4 @@
 ﻿using Ejercicio4.Models;
-using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,13 +6,6 @@ using System.Threading.Tasks;
 
 namespace Ejercicio4.Helper
 {
-    public enum OperacionesBasicas
-    {
-        Suma, 
-        Resta, 
-        Multiplicacion,
-        Division
-    }
 
     public enum OperacionesPrealgebra
     {
@@ -23,34 +15,10 @@ namespace Ejercicio4.Helper
         Factorial
     }
 
-    public class Functions
+    public class FuncPrealgebra
     {
-        public static OperandosViewModel DeterminarOperacionSuma(OperandosViewModel model, OperacionesBasicas op)
-        {
-            model.Resultado = null;
-            if (model.Num1.HasValue && model.Num2.HasValue)
-            {
-                switch (op)
-                {
-                    case OperacionesBasicas.Suma:
-                        model.Resultado = model.Num1.Value + model.Num2.Value;
-                        break;
-                    case OperacionesBasicas.Resta:
-                        model.Resultado = model.Num1.Value - model.Num2.Value;
-                        break;
-                    case OperacionesBasicas.Multiplicacion:
-                        model.Resultado = model.Num1.Value * model.Num2.Value;
-                        break;
-                    case OperacionesBasicas.Division:
-                        model.Resultado = model.Num1.Value / model.Num2.Value;
-                        break;
-                }
-                return model;
-            }
-            return model;
-        }
 
-        public static OperandosViewModel DeterminarOperacionPrealgebra(OperandosViewModel model, OperacionesPrealgebra op)
+        public static OperandosViewModel DeterminarOperacion(OperandosViewModel model, OperacionesPrealgebra op)
         {
             model.Resultado = null;
             if (model.Num1.HasValue && model.Num2.HasValue)
@@ -70,6 +38,7 @@ namespace Ejercicio4.Helper
                         model.Resultado = Factorial(Convert.ToInt32(model.Num1.Value));
                         break;
                 }
+                model.Resultado = (Math.Round((double)model.Resultado * 10000)) / 10000;
                 return model;
             }
             return model;
@@ -80,5 +49,6 @@ namespace Ejercicio4.Helper
             if (n == 0) return 1;
             return n * Factorial(n - 1);
         }
+
     }
 }

@@ -1,0 +1,49 @@
+﻿@model OperandosViewModel
+@{
+    ViewData["Title"] = "Logaritmo";
+}
+
+<div class="mt-lg-5 ml-lg-5">
+
+    <form asp-controller="Algebra" asp-action="Logaritmo" method="post">
+
+        <div class="form-row align-items-center">
+
+            <div class="col-lg-5" style="margin-right:-7.5rem; margin-left:9rem">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <label class="control-label">Base</label>
+                        <input asp-for="Num1" type="number" min="2" class="form-control" />
+                        <span asp-validation-for="Num1" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5" style="margin-left:4rem">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <label class="control-label">Argumento</label>
+                        <input asp-for="Num2" type="number" min="0" step="0.0000001" class="form-control" />
+                        <span asp-validation-for="Num2" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="form-group" style="margin:5% 41%">
+            <div class="col-md-5">
+                <button type="submit" class="btn btn-danger">Calcular</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+@if (Model.Resultado != null)
+{
+    <div class="text-center">
+        <h1>El resultado es @((double)Model.Resultado)</h1>
+    </div>
+}

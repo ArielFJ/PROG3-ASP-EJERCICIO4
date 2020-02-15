@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Ejercicio4.Helper;
 using Ejercicio4.Models;
 using Microsoft.AspNetCore.Mvc;
-using Ejercicio4.Helper;
 
 
 namespace Ejercicio4.Controllers
@@ -19,7 +15,7 @@ namespace Ejercicio4.Controllers
         [HttpPost]
         public IActionResult Suma(OperandosViewModel model)
         {
-            return View(Functions.DeterminarOperacionSuma(model, OperacionesBasicas.Suma));
+            return View(FuncBasica.DeterminarOperacion(model, OperacionesBasicas.Suma));
         }
 
         public IActionResult Resta()
@@ -30,7 +26,7 @@ namespace Ejercicio4.Controllers
         [HttpPost]
         public IActionResult Resta(OperandosViewModel model)
         {
-            return View(Functions.DeterminarOperacionSuma(model,OperacionesBasicas.Resta));
+            return View(FuncBasica.DeterminarOperacion(model,OperacionesBasicas.Resta));
         }
 
         public IActionResult Multiplicacion()
@@ -41,7 +37,7 @@ namespace Ejercicio4.Controllers
         [HttpPost]
         public IActionResult Multiplicacion(OperandosViewModel model)
         {
-            return View(Functions.DeterminarOperacionSuma(model, OperacionesBasicas.Multiplicacion));
+            return View(FuncBasica.DeterminarOperacion(model, OperacionesBasicas.Multiplicacion));
         }
 
         public IActionResult Division()
@@ -52,7 +48,7 @@ namespace Ejercicio4.Controllers
         [HttpPost]
         public IActionResult Division(OperandosViewModel model)
         {
-            return View(Functions.DeterminarOperacionSuma(model, OperacionesBasicas.Division));
+            return View(FuncBasica.DeterminarOperacion(model, OperacionesBasicas.Division));
         }
 
     }
