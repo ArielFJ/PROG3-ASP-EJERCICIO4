@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Ejercicio4.Models;
 using Microsoft.AspNetCore.Mvc;
+using Ejercicio4.Helper;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Ejercicio4.Controllers
 {
@@ -19,7 +19,7 @@ namespace Ejercicio4.Controllers
         [HttpPost]
         public IActionResult Suma(OperandosViewModel model)
         {
-            return DeterminarOperacion(model, "+");
+            return View(Functions.DeterminarOperacionSuma(model, OperacionesBasicas.Suma));
         }
 
         public IActionResult Resta()
@@ -30,7 +30,7 @@ namespace Ejercicio4.Controllers
         [HttpPost]
         public IActionResult Resta(OperandosViewModel model)
         {
-            return DeterminarOperacion(model, "-");
+            return View(Functions.DeterminarOperacionSuma(model,OperacionesBasicas.Resta));
         }
 
         public IActionResult Multiplicacion()
@@ -41,7 +41,7 @@ namespace Ejercicio4.Controllers
         [HttpPost]
         public IActionResult Multiplicacion(OperandosViewModel model)
         {
-            return DeterminarOperacion(model, "*");
+            return View(Functions.DeterminarOperacionSuma(model, OperacionesBasicas.Multiplicacion));
         }
 
         public IActionResult Division()
@@ -52,32 +52,8 @@ namespace Ejercicio4.Controllers
         [HttpPost]
         public IActionResult Division(OperandosViewModel model)
         {
-            return DeterminarOperacion(model, "/");
+            return View(Functions.DeterminarOperacionSuma(model, OperacionesBasicas.Division));
         }
 
-        ViewResult DeterminarOperacion(OperandosViewModel model, string op)
-        {
-            model.Resultado = null;
-            if (ModelState.IsValid)
-            {
-                switch (op)
-                {
-                    case "+":
-                        model.Resultado = model.Num1 + model.Num2;
-                        break;
-                    case "-":
-                        model.Resultado = model.Num1 - model.Num2;
-                        break;
-                    case "*":
-                        model.Resultado = model.Num1 * model.Num2;
-                        break;
-                    case "/":
-                        model.Resultado = model.Num1 / model.Num2;
-                        break;
-                }
-                return View(model);
-            }
-            return View(model);
-        }
     }
 }

@@ -10,11 +10,11 @@ namespace Ejercicio4.Models
     {
         [Required]
         [Display(Name = "Número 1")]
-        public double Num1 { get; set; }
+        public double? Num1 { get; set; }
 
         [Display(Name = "Número 2")]
         [Required]
-        public double Num2 { get; set; }
+        public double? Num2 { get; set; }
 
 
         public double? Resultado { get; set; }
