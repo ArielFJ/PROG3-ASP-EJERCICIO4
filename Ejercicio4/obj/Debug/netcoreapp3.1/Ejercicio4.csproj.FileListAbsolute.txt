@@ -34,3 +34,4 @@ D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\o
 D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Ejercicio4.dll
 D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Ejercicio4.pdb
 D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Ejercicio4.csproj.CopyComplete
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Basica\Suma.cshtml.g.cs
