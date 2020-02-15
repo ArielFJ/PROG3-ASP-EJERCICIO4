@@ -19,7 +19,8 @@ namespace Ejercicio4.Helper
     {
         Potencia,
         RaizCuadrada,
-        RaizCubica
+        RaizCubica,
+        Factorial
     }
 
     public class Functions
@@ -59,11 +60,24 @@ namespace Ejercicio4.Helper
                     case OperacionesPrealgebra.Potencia:
                         model.Resultado = Math.Pow(model.Num1.Value, model.Num2.Value);
                         break;
-
+                    case OperacionesPrealgebra.RaizCuadrada:
+                        model.Resultado = Math.Sqrt(model.Num1.Value);
+                        break;
+                    case OperacionesPrealgebra.RaizCubica:
+                        model.Resultado = Math.Cbrt(model.Num1.Value);
+                        break;
+                    case OperacionesPrealgebra.Factorial:
+                        model.Resultado = Factorial(Convert.ToInt32(model.Num1.Value));
+                        break;
                 }
                 return model;
             }
             return model;
+        }
+
+        static double Factorial(int n)
+        {
+            return n;
         }
     }
 }

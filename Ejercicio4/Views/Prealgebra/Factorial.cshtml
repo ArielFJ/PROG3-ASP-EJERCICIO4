@@ -1,0 +1,39 @@
+﻿@model OperandosViewModel
+@{
+    ViewData["Title"] = "Factorial";
+}
+
+<div class="mt-lg-5 ml-lg-5">
+
+    <form asp-controller="Prealgebra" asp-action="RaizCuadrada" method="post">
+
+        <div class="form-row align-items-center">
+
+            <div class="col-lg-7" style="margin-right:-7.5rem; margin-left:9rem">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <label class="control-label">Factor</label>
+                        <input asp-for="Num1" type="number" min="0" class="form-control" />
+                        <span asp-validation-for="Num1" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="form-group" style="margin:5% 41%">
+            <div class="col-md-5">
+                <button type="submit" class="btn btn-danger">Calcular</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+@if (Model.Resultado != null)
+{
+    <div class="text-center">
+        <h1>El resultado es @((double)Model.Resultado)</h1>
+    </div>
+}

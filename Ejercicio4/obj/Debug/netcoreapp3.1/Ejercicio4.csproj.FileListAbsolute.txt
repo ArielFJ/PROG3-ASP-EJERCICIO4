@@ -39,3 +39,6 @@ D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\o
 D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Basica\Division.cshtml.g.cs
 D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Basica\Multiplicacion.cshtml.g.cs
 D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Prealgebra\Potencia.cshtml.g.cs
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Prealgebra\Factorial.cshtml.g.cs
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Prealgebra\RaizCuadrada.cshtml.g.cs
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Prealgebra\RaizCubica.cshtml.g.cs
