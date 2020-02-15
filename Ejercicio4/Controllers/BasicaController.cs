@@ -19,10 +19,62 @@ namespace Ejercicio4.Controllers
         [HttpPost]
         public IActionResult Suma(OperandosViewModel model)
         {
+            return DeterminarOperacion(model, "+");
+        }
+
+        public IActionResult Resta()
+        {
+            return View(new OperandosViewModel());
+        }
+
+        [HttpPost]
+        public IActionResult Resta(OperandosViewModel model)
+        {
+            return DeterminarOperacion(model, "-");
+        }
+
+        public IActionResult Multiplicacion()
+        {
+            return View(new OperandosViewModel());
+        }
+
+        [HttpPost]
+        public IActionResult Multiplicacion(OperandosViewModel model)
+        {
+            return DeterminarOperacion(model, "*");
+        }
+
+        public IActionResult Division()
+        {
+            return View(new OperandosViewModel());
+        }
+
+        [HttpPost]
+        public IActionResult Division(OperandosViewModel model)
+        {
+            return DeterminarOperacion(model, "/");
+        }
+
+        ViewResult DeterminarOperacion(OperandosViewModel model, string op)
+        {
             model.Resultado = null;
             if (ModelState.IsValid)
             {
-                model.Resultado = model.Num1 + model.Num2;
+                switch (op)
+                {
+                    case "+":
+                        model.Resultado = model.Num1 + model.Num2;
+                        break;
+                    case "-":
+                        model.Resultado = model.Num1 - model.Num2;
+                        break;
+                    case "*":
+                        model.Resultado = model.Num1 * model.Num2;
+                        break;
+                    case "/":
+                        model.Resultado = model.Num1 / model.Num2;
+                        break;
+                }
                 return View(model);
             }
             return View(model);
