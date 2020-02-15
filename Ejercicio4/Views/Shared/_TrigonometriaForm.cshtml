@@ -1,25 +1,21 @@
 ﻿@model OperandosViewModel
-@{
-    ViewData["Title"] = "Neperiano";
-}
 
 <div class="mt-lg-5 ml-lg-5">
 
     <p><b>
-    Los logaritmos naturales o logaritmos neperianos son los que tienen base e. Se representan por ln (x) o L(x).
-    Los logaritmos neperianios deben su nombre a su descubridor John Neper y fueron los primeros en ser utilizados.
-    El logaritmo neperiano de x (ln x) es la potencia a la que se debe elevar e para obtener x.
+    Las funciones trigonométricas son las funciones establecidas con el fin de extender la definición de las razones trigonométricas a todos los números reales y complejos.
+    Las funciones trigonométricas son de gran importancia en física, astronomía, cartografía, náutica, telecomunicaciones, la representación de fenómenos periódicos, y otras de muchas aplicaciones.
 </b></p>
 
-    <form asp-controller="Algebra" asp-action="Neperiano" method="post">
+    <form asp-controller="Trigonometria" asp-action="@ViewData["action"]" method="post">
 
         <div class="form-row align-items-center">
 
             <div class="col-lg-7" style="margin-right:-7.5rem; margin-left:9rem">
                 <div class="form-group">
                     <div class="col-md-5">
-                        <label class="control-label">Argumento</label>
-                        <input asp-for="Num1" type="number" step="0.0000001" min="0" class="form-control" />
+                        <label class="control-label">@ViewData["vista"] de</label>
+                        <input asp-for="Num1" type="number" step="0.0001" class="form-control" />
                         <span asp-validation-for="Num1" class="text-danger"></span>
                     </div>
                 </div>

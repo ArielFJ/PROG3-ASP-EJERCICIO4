@@ -6,6 +6,8 @@
 
 <div class="mt-lg-5 ml-lg-5">
 
+    <p><b>En matemática, la división es una operación parcialmente definida en el conjunto de los números naturales y los números enteros; en cambio, en el caso de los números racionales, reales y complejos es siempre posible efectuar la división, exigiendo que el divisor sea distinto de cero, sea cual fuera la naturaleza de los números por dividir.</b></p>
+
     <form asp-controller="Basica" asp-action="Division" method="post">
 
         <div class="form-row align-items-center">
@@ -13,7 +15,7 @@
             <div class="col-lg-5" style="margin-right:-7.5rem; margin-left:9rem">
                 <div class="form-group">
                     <div class="col-md-5">
-                        <label asp-for="Num1" class="control-label"></label>
+                        <label class="control-label">Divisor</label>
                         <input asp-for="Num1" type="number" step="0.0001" class="form-control" />
                         <span asp-validation-for="Num1" class="text-danger"></span>
                     </div>
@@ -25,7 +27,7 @@
             <div class="col-lg-5" style="margin-left:4rem">
                 <div class="form-group">
                     <div class="col-md-5">
-                        <label asp-for="Num2" class="control-label"></label>
+                        <label class="control-label">Dividendo</label>
                         <input asp-for="Num2" type="number" step="0.0001" class="form-control" />
                         <span asp-validation-for="Num2" class="text-danger"></span>
                     </div>

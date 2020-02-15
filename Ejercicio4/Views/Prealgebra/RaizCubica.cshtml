@@ -3,33 +3,40 @@
     ViewData["Title"] = "Raíz Cúbica";
 }
 
-<div class="mt-lg-5 ml-lg-5">
+    <div class="mt-lg-5 ml-lg-5">
 
-    <form asp-controller="Prealgebra" asp-action="RaizCubica" method="post">
+        <p>
+            <b>
+                En las matemáticas, la raíz cúbica de un número X es aquel número Y que al ser multiplicado por sí mismo 3 veces da como resultado el valor
+                X, es decir, cumple la ecuación Y³=X.
+            </b>
+        </p>
 
-        <div class="form-row align-items-center">
+        <form asp-controller="Prealgebra" asp-action="RaizCubica" method="post">
 
-            <div class="col-lg-7" style="margin-right:-7.5rem; margin-left:9rem">
-                <div class="form-group">
-                    <div class="col-md-5">
-                        <label class="control-label">Radicando</label>
-                        <input asp-for="Num1" type="number" step="0.0001" class="form-control" />
-                        <span asp-validation-for="Num1" class="text-danger"></span>
+            <div class="form-row align-items-center">
+
+                <div class="col-lg-7" style="margin-right:-7.5rem; margin-left:9rem">
+                    <div class="form-group">
+                        <div class="col-md-5">
+                            <label class="control-label">Radicando</label>
+                            <input asp-for="Num1" type="number" step="0.0001" class="form-control" />
+                            <span asp-validation-for="Num1" class="text-danger"></span>
+                        </div>
                     </div>
+                </div>
+
+            </div>
+
+
+            <div class="form-group" style="margin:5% 41%">
+                <div class="col-md-5">
+                    <button type="submit" class="btn btn-danger">Calcular</button>
                 </div>
             </div>
 
-        </div>
-
-
-        <div class="form-group" style="margin:5% 41%">
-            <div class="col-md-5">
-                <button type="submit" class="btn btn-danger">Calcular</button>
-            </div>
-        </div>
-
-    </form>
-</div>
+        </form>
+    </div>
 
 @if (Model.Resultado != null)
 {

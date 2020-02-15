@@ -45,3 +45,10 @@ D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\o
 D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Algebra\Logaritmo.cshtml.g.cs
 D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Algebra\Neperiano.cshtml.g.cs
 D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Algebra\Exponencial.cshtml.g.cs
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Trigonometria\Seno.cshtml.g.cs
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Trigonometria\Coseno.cshtml.g.cs
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Trigonometria\Tangente.cshtml.g.cs
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_TrigonometriaForm.cshtml.g.cs
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Trigonometria\Cosecante.cshtml.g.cs
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Trigonometria\Secante.cshtml.g.cs
+D:\Documents\_ITLA\PROGRAMACION\PROGRAMACION 3\Módulo 4\Ejercicio4\Ejercicio4\obj\Debug\netcoreapp3.1\Razor\Views\Trigonometria\Cotangente.cshtml.g.cs
